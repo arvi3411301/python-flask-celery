@@ -19,8 +19,8 @@ def make_celery(app):
 
 # Configure Celery with flask
 app.config.update(
-    CELERY_BROKER_URL='redis://redis.hasura:6379/1',
-    CELERY_RESULT_BACKEND='redis://redis.hasura:6379/1'
+    CELERY_BROKER_URL='redis://session-redis.hasura:6379/1',
+    CELERY_RESULT_BACKEND='redis://session-redis.hasura:6379/1'
 )
 celery = make_celery(app)
 
