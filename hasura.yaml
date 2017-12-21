@@ -1,4 +1,4 @@
-description: Blank template for a Hasura project
+description: Sample Celery app
 keywords: python, flask, celery
 media: {}
 name: base

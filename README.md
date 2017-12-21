@@ -50,18 +50,13 @@ The microservice[1] sample code is inside the `microservices/app/app` directory.
 ### Step 1: Add your code in the microservices directory
 Copy all your exising source code in `microservices/app/app` directory or replace the `microservices/app/app` directory with your app directory. Ensure that the structure of the directory is coherent with the current structure.
 
-### Step 2: How to use Celery Module
-
-Celery is on the Python Package Index (PyPI), so it can be installed with standard Python tools like pip or easy_install:
-
-```bash
-pip install celery
-```
+### Step 2: Using Celery Module
 
 Minimal Example of using Celery with Flask:
 
 ```python
 from flask import Flask
+from celery import Celery
 
 flask_app = Flask(__name__)
 
